@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cera Pro';
+}
+
+.section1 {
+    min-height: 100vh;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.section1::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(340px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.elipse1 {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    background: #47CAF3;
+    border-radius: 50%;
+    top: -30%;
+    left: -20%;
+    z-index: 1;
+}
+
+.elipse2 {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    background: #FFDB80;
+    border-radius: 50%;
+    top: -20%;
+    right: -20%;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    color: #686C75;
+    text-decoration: none;
+}
+
+.menu-list li + li {
+    margin-left: 90px;
+}
+
+.logo {
+    margin: 0;
+    font-weight: 400;
+    font-size: 29.2528px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Cera Pro';
+}
