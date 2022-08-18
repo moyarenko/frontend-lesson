@@ -3,13 +3,17 @@
     padding: 0;
 }
 
+*::before,*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Cera Pro';
+    background-color: red;
 }
 
 .section1 {
     min-height: 100vh;
-    
     position: relative;
     overflow: hidden;
 }
@@ -30,7 +34,7 @@ body {
     position: absolute;
     width: 80vw;
     height: 80vw;
-    background: #47CAF3;
+    background: #FFDB80;
     border-radius: 50%;
     top: -30%;
     left: -20%;
@@ -41,7 +45,7 @@ body {
     position: absolute;
     width: 80vw;
     height: 80vw;
-    background: #FFDB80;
+    background: #47CAF3;
     border-radius: 50%;
     top: -20%;
     right: -20%;
@@ -90,4 +94,179 @@ header {
     text-align: center;
     color: #000000;
     font-family: 'Cera Pro';
+}
+
+.main {
+    display: flex;
+    align-items: stretch;
+    padding-top: 120px;
+}
+
+.main .left {
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main .left h1 {
+    font-weight: 700;
+    font-size: 58.5056px;
+    line-height: 68px;
+    margin-top: 14px;
+}
+
+.main .right {
+    flex: 0 1 auto;
+    padding-left: 30px;
+}
+
+.main .right .img1 {
+    border-radius: 376.107px 376.107px 0px 0px;
+}
+
+.img1-wrapper {
+    position: relative;
+}
+
+.img2 {
+    position: absolute;
+    left: -20px;
+    top: -18px;
+    z-index: -1;
+}
+
+.img3 {
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: -30px;
+    right: -95px;
+    border-radius: 50%;
+}
+
+.img4 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 240px;
+    right: -140px;
+    border-radius: 50%;
+}
+
+
+.img5 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    right: -190px;
+    top: 140px;
+}
+
+.title-group {
+    margin-top: 160px;
+}
+
+form {
+    padding: 22px 34px;
+    position: absolute;
+    left: 0;
+    bottom: 76px;
+    background: rgba(243, 243, 243, 0.6);
+    backdrop-filter: blur(35.5212px);
+    border-radius: 5.22371px;
+    width: 777.29px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.8054px;
+    line-height: 24px;
+    color: #989898;
+    display: inline-flex;
+    align-items: center;
+}
+
+form label img {
+    margin-right: 15px;
+}
+
+form input {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.8054px;
+    line-height: 24px;
+    color: #989898;
+    border: none;
+    background: transparent;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+form input::placeholder {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.8054px;
+    line-height: 24px;
+    color: #989898;
+}
+
+form button {
+    background: #FD5B2F;
+    border-radius: 5.22371px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9.40268px 36.566px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.7159px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.people-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.people {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.people + .people {
+    margin-left: -7px;
+}
+
+.people:last-child {
+    margin-right: 14px;
+}
+
+.people img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
