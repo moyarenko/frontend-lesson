@@ -23,3 +23,24 @@ https://sass-lang.com/
 ## BEM
 
 https://ru.bem.info/methodology/
+
+## Optimization image
+
+https://squoosh.app/
+https://tinypng.com/
+
+## jQuery
+
+https://jquery.com/
+
+## Can I Use де перевіряємо що ми можемо використовувати
+
+https://caniuse.com/
+
+## Slick
+
+https://kenwheeler.github.io/slick/
+
+
+## Scroll menu animated
+https://www.w3schools.com/howto/howto_css_smooth_scroll.asp

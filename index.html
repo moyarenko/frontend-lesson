@@ -1,87 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson Part 1</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-</head>
-<body>
-    <section class="section1">
-        <div class="elipse1"></div>
-        <div class="elipse2"></div>
-        <div class="container">
-            <header>
-                <menu>
-                    <nav>
-                        <ul class="menu-list">
-                            <li><a href="#" title="Home" >Home</a></li>
-                            <li><a href="#" title="" >About</a></li>
-                            <li><a href="#" title="" >Services</a></li>
-                        </ul>
-                    </nav>
-                </menu>
-                <h2 class="logo">1 Space</h2>
-                <menu>
-                    <nav>
-                        <ul class="menu-list">
-                            <li><a href="#" title="" >Services</a></li>
-                            <li><a href="#" title="" >Spaces</a></li>
-                            <li><a href="#" title="" >Events</a></li>
-                        </ul>
-                    </nav>
-                </menu>
-            </header>
-            <div class="main">
-                <div class="left">
-                    <div class="title-group">
-                        <svg width="84" height="17" viewBox="0 0 84 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.57715 15.8232L8.54383 3.88988C9.31385 2.34983 11.5116 2.34983 12.2816 3.88988L16.3794 12.0855C17.1494 13.6255 19.3471 13.6255 20.1172 12.0855L24.215 3.88988C24.985 2.34983 27.1827 2.34983 27.9527 3.88988L32.0505 12.0855C32.8206 13.6255 35.0183 13.6255 35.7883 12.0855L39.8861 3.88988C40.6561 2.34983 42.8539 2.34983 43.6239 3.88988L47.7217 12.0855C48.4917 13.6255 50.6894 13.6255 51.4594 12.0855L55.5572 3.88988C56.3273 2.34983 58.525 2.34983 59.295 3.88988L63.3928 12.0855C64.1628 13.6255 66.3606 13.6255 67.1306 12.0855L71.2284 3.88988C71.9984 2.34983 74.1961 2.34983 74.9661 3.88988L80.9328 15.8232" stroke="#FD5B2F" stroke-width="5.22371"/>
-                        </svg>
-                        <h1>A new way to revolutionise your workspace to yourself</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson Part 1</title>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="./main.css" />
+        <link rel="stylesheet" href="./fonts/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    </head>
+    <body>
+        <section class="section1">
+            <div class="elipse1"></div>
+            <div class="elipse2"></div>
+            <div class="container">
+                <header>
+                    <menu>
+                        <nav>
+                            <ul class="menu-list">
+                                <li><a href="#" title="Home" >Home</a></li>
+                                <li><a href="#about" title="" >About</a></li>
+                                <li><a href="#" title="" >Services</a></li>
+                            </ul>
+                        </nav>
+                    </menu>
+                    <h2 class="logo">1 Space</h2>
+                    <menu>
+                        <nav>
+                            <ul class="menu-list">
+                                <li><a href="#" title="" >Services</a></li>
+                                <li><a href="#" title="" >Spaces</a></li>
+                                <li><a href="#" title="" >Events</a></li>
+                            </ul>
+                        </nav>
+                    </menu>
+                </header>
+                <div class="main">
+                    <div class="left">
+                        <div class="title-group">
+                            <svg width="84" height="17" viewBox="0 0 84 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.57715 15.8232L8.54383 3.88988C9.31385 2.34983 11.5116 2.34983 12.2816 3.88988L16.3794 12.0855C17.1494 13.6255 19.3471 13.6255 20.1172 12.0855L24.215 3.88988C24.985 2.34983 27.1827 2.34983 27.9527 3.88988L32.0505 12.0855C32.8206 13.6255 35.0183 13.6255 35.7883 12.0855L39.8861 3.88988C40.6561 2.34983 42.8539 2.34983 43.6239 3.88988L47.7217 12.0855C48.4917 13.6255 50.6894 13.6255 51.4594 12.0855L55.5572 3.88988C56.3273 2.34983 58.525 2.34983 59.295 3.88988L63.3928 12.0855C64.1628 13.6255 66.3606 13.6255 67.1306 12.0855L71.2284 3.88988C71.9984 2.34983 74.1961 2.34983 74.9661 3.88988L80.9328 15.8232" stroke="#FD5B2F" stroke-width="5.22371"/>
+                            </svg>
+                            <h1>A new way to revolutionise your workspace to yourself</h1>
+                        </div>
+                        <form>
+                            <label><img src="./img/location.svg" />City</label>
+                            <input placeholder="Location" name="city" />
+                            <button>Schedule Visit</button>
+                        </form>
+                        <div class="people-group">
+                            <div class="people">
+                                <img src="./img/users/user1.jpg" alt="John" />
+                            </div>
+                            <div class="people">
+                                <img src="./img/users/user1.jpg" alt="John" />
+                            </div>
+                            <div class="people">
+                                <img src="./img/users/user1.jpg" alt="John" />
+                            </div>
+                            <div class="people">
+                                <img src="./img/users/user1.jpg" alt="John" />
+                            </div>
+                            <div class="people">
+                                <img src="./img/users/user1.jpg" alt="John" />
+                            </div>
+                            <div class="people">
+                                <img src="./img/users/user1.jpg" alt="John" />
+                            </div>
+                            16 people booked a visit in last 24 hours
+                        </div>
                     </div>
-                    <form>
-                        <label><img src="./img/location.svg" />City</label>
-                        <input placeholder="Location" name="city" />
-                        <button>Schedule Visit</button>
-                    </form>
-                    <div class="people-group">
-                        <div class="people">
-                            <img src="./img/users/user1.jpg" alt="John" />
+                    <div class="right">
+                        <div class="img1-wrapper">
+                        <img class="img2" src="./img/Rectangle 10.png" />
+                        <img class="img1" src="./img/image1.png" />
+                        <img class="img3" src="./img/1.jpeg" />
+                        <img class="img4" src="./img/2.webp" />
+                        <img class="img5" src="./img/3.jpg" />
                         </div>
-                        <div class="people">
-                            <img src="./img/users/user1.jpg" alt="John" />
-                        </div>
-                        <div class="people">
-                            <img src="./img/users/user1.jpg" alt="John" />
-                        </div>
-                        <div class="people">
-                            <img src="./img/users/user1.jpg" alt="John" />
-                        </div>
-                        <div class="people">
-                            <img src="./img/users/user1.jpg" alt="John" />
-                        </div>
-                        <div class="people">
-                            <img src="./img/users/user1.jpg" alt="John" />
-                        </div>
-                        16 people booked a visit in last 24 hours
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="img1-wrapper">
-                       <img class="img2" src="./img/Rectangle 10.png" />
-                       <img class="img1" src="./img/image1.png" />
-                       <img class="img3" src="./img/1.jpeg" />
-                       <img class="img4" src="./img/2.webp" />
-                       <img class="img5" src="./img/3.jpg" />
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-</body>
+        </section>
+        <section class="section2" id="about">
+            <div class="container">
+                <div id="slider">
+                    <div class="slider-item">
+                        <img class="slider-rectangle" src="./img/slider/rectangle.png">
+                        <img class="slider-image" src="./img/slider/1.png">
+                    </div>
+                    <div class="slider-item">
+                        <img class="slider-rectangle" src="./img/slider/rectangle.png">
+                        <img class="slider-image" src="./img/slider/2.jpg">
+                    </div>
+                    <div class="slider-item">
+                        <img class="slider-rectangle" src="./img/slider/rectangle.png">
+                        <img class="slider-image" src="./img/slider/3.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="./slick/slick.min.js" ></script>
+        <script>
+            $(document).ready(function(){ // jQuery -> чекаємо завантаження сторінки
+                $('#slider').slick({ // $('.slider')  -> обираємо елемент на якому запустити ; .slick({    }) заускаємо код слайдера з бібліотеки з налаштування
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                    dots: true,
+                    dotsClass: 'slider-dot',
+                })
+
+                $('header menu a').click(function(e) {
+                    e.preventDefault();
+                     const id = $(this).attr('href');
+
+
+                     const element = $(id)
+
+                     if (element.length){
+                        $('html, body').animate({
+                            scrollTop: element.offset().top
+                        }, 800, function(){
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = id;
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </body>
 </html>
